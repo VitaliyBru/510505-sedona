@@ -2,13 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta rel="stylesheet" type="text/css" href="css/normalize.min.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
     <header class="main-header">
       <a class="logo">
-        <img src="http://placehold.it/150x100" class="logo__img" width="138" height="70">
+        <img src="img/logo-sedona.svg" class="logo__img" width="138" height="70" alt="Седона">
       </a>
       <ul class="main-nav">
         <li class="main-nav__item">
@@ -26,14 +25,13 @@
       </ul>
     </header>
     <main class="main">
-      <h1 class="visually-hidden">Достоинства Sedona для туризма</h1>
-      <section class="intro">
-        <h2 class="visually-hidden">О Sedona в «двух словах»</h2>
-        <img src="img/welcome.png" class="intro__img" width="459" height="353">
-        <p class="intro__text">
-          Седона — небольшой городок в Аризоне, заслуживающий большего!
-        </p>
-      </section>
+      <h1 class="visually-hidden">Седона</h1>
+      <div class="intro">
+        <div class="intro__container-img">
+          <img src="img/welcome.svg" class="intro__img" width="458" height="352" alt="Добропожаловать в Седону">
+        </div>
+        <b class="intro__text">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+      </div>
       <section class="advantage">
         <h2 class="advantage__heading">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
         <div class="advantage__gallery">
@@ -45,16 +43,16 @@
           </div>
 
           <div class="advantage__img  advantage__first-line">
-            <img src="http://placehold.it/150x100">
+            <img src="img/layer-10.jpg" alt="heart of Uptown Sedona">
+          </div>
+
+          <div class="advantage__img  advantage__third-line">
+            <img src="img/layer-5.jpg" alt="Мост Дьявола">
           </div>
 
           <div class="advantage__item  advantage__item--background--blue  advantage__third-line">
             <h3 class="advantage__item-heading">Там есть Мост дьявола</h3>
             <p class="advantage__text  advantage__item-counter">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </div>
-
-          <div class="advantage__img  advantage__third-line">
-            <img src="http://placehold.it/150x100">
           </div>
 
           <div class="advantage__item">
@@ -103,21 +101,21 @@
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__text-large">#visitSEDONA</p>
-      <ul class="follow-us  footer__follow-us">
+      <p class="footer__column  footer__column--text--large">#visitSEDONA</p>
+      <ul class="follow-us  footer__column">
         <li class="follow-us__item">
-          <a href="#" class="follow-us__link  follow-us__link--twitter"><span class="visually-hidden">Мы в твитере</span></a>
+          <a href="#" class="follow-us__link  follow-us__link--twitter">tw</a>
         </li>
         <li class="follow-us__item">
-          <a href="#" class="follow-us__link  follow-us__link--fb"><span class="visually-hidden">Мы в фейсбуке</span></a>
+          <a href="#" class="follow-us__link  follow-us__link--fb">fb</a>
         </li>
         <li class="follow-us__item">
-          <a href="#" class="follow-us__link  follow-us__link--youtube"><span class="visually-hidden">Наш канал на ютубе</span></a>
+          <a href="#" class="follow-us__link  follow-us__link--youtube">you tube</a>
         </li>
       </ul>
-      <p class="footer__develop-by">Website by
-        <a href="#">
-          <img src="http://placehold.it/150x100" width="">
+      <p class="footer__column  footer__column--text--small">Website by
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="108" height="36">
         </a>
       </p>
     </footer>

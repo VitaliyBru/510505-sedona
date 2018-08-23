@@ -2,29 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta rel="stylesheet" type="text/css" href="css/normalize.min.css">
     <title>HTML Academy: Седона-отели</title>
 </head>
 <body>
-  <header class="main-header">
-    <a href="index.html" class="logo">
-      <img src="img/logo-sedona.svg" class="logo__img" width="138" height="70">
-    </a>
-    <ul class="main-nav">
-      <li class="main-nav__item">
-        <a href="#" class="main-nav__link">Информация</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="#" class="main-nav__link">Фото и видео</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="#" class="main-nav__link">Карта штата</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="#" class="main-nav__link">Гостиницы</a>
-      </li>
-    </ul>
-  </header>
+<header class="main-header">
+  <a href="index.html" class="logo">
+    <img src="img/logo-sedona.svg" class="logo__img" width="138" height="70" alt="Седона">
+  </a>
+  <ul class="main-nav">
+    <li class="main-nav__item">
+      <a href="#" class="main-nav__link">Информация</a>
+    </li>
+    <li class="main-nav__item">
+      <a href="#" class="main-nav__link">Фото и видео</a>
+    </li>
+    <li class="main-nav__item">
+      <a href="#" class="main-nav__link">Карта штата</a>
+    </li>
+    <li class="main-nav__item">
+      <a href="inner.html" class="main-nav__link">Гостиницы</a>
+    </li>
+  </ul>
+</header>
   <main class="main">
     <div class="wrapper">
       <form class="filters" action="javascript: alert('форма отправленна')" method="get">
@@ -96,7 +95,7 @@
       </div>
       <div class="catalog">
         <div class="catalog__item">
-          <img src="http://placehold.it/150x100" width="150">
+          <img src="img/layer-21.jpg" width="135" height="90">
           <div class="catalog__hotel-info">
             <h3 class="catalog__hotel-name">Amara Resort & Spa</h3>
             <p class="catalog__text"><span class="catalog__hotel-type">Гостиница</span>От 4000 Р.</p>
@@ -117,7 +116,7 @@
         </div>
 
         <div class="catalog__item">
-          <img src="http://placehold.it/150x100" width="150">
+          <img src="img/layer-89-copy.jpg" width="135" height="90">
           <div class="catalog__hotel-info">
             <h3 class="catalog__hotel-name">Desert Quail Inn</h3>
             <p class="catalog__text"><span class="catalog__hotel-type">Мотель</span>От 3000 Р.</p>
@@ -137,7 +136,7 @@
         </div>
 
         <div class="catalog__item">
-          <img src="http://placehold.it/150x100" width="150">
+          <img src="img/layer-22.jpg" width="135" height="90">
           <div class="catalog__hotel-info">
             <h3 class="catalog__hotel-name">Villas at Poco Diablo</h3>
             <p class="catalog__text"><span class="catalog__hotel-type">Апартаменты</span>От 2000 Р.</p>
@@ -158,21 +157,21 @@
     </div>
   </main>
   <footer class="footer">
-    <p class="footer__text-large">#visitSEDONA</p>
-    <ul class="follow-us  footer__follow-us">
+    <p class="footer__column  footer__column--text--large">#visitSEDONA</p>
+    <ul class="follow-us  footer__column">
       <li class="follow-us__item">
-        <a href="#" class="follow-us__link  follow-us__link--twitter"><span class="visually-hidden">Мы в твитере</span></a>
+        <a href="#" class="follow-us__link  follow-us__link--twitter">tw</a>
       </li>
       <li class="follow-us__item">
-        <a href="#" class="follow-us__link  follow-us__link--fb"><span class="visually-hidden">Мы в фейсбуке</span></a>
+        <a href="#" class="follow-us__link  follow-us__link--fb">fb</a>
       </li>
       <li class="follow-us__item">
-        <a href="#" class="follow-us__link  follow-us__link--youtube"><span class="visually-hidden">Наш канал на ютубе</span></a>
+        <a href="#" class="follow-us__link  follow-us__link--youtube">you tube</a>
       </li>
     </ul>
-    <p class="footer__develop-by">Website by
-      <a href="#">
-        <img src="http://placehold.it/150x100" width="">
+    <p class="footer__column  footer__column--text--small">Website by
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="108" height="36">
       </a>
     </p>
   </footer>
