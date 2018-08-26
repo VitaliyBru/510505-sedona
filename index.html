@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -36,9 +38,9 @@
         <h2 class="advantage__heading">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
         <div class="advantage__gallery">
           <div class="advantage__item  advantage__item--background--blue  advantage__first-line">
-            <h3 class="advantage__item-heading">Настоящий городок</h3>
-            <p class="advantage__text  advantage__item-counter">Седона — не аттракцион для туристов,
-              там течёт своя жизнь
+            <h3 class="advantage__item-heading  advantage__item-heading--white">Настоящий городок</h3>
+            <p class="advantage__text  advantage__text--white  advantage__item-counter">
+              Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
           </div>
 
@@ -51,38 +53,52 @@
           </div>
 
           <div class="advantage__item  advantage__item--background--blue  advantage__third-line">
-            <h3 class="advantage__item-heading">Там есть Мост дьявола</h3>
-            <p class="advantage__text  advantage__item-counter">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <h3 class="advantage__item-heading  advantage__item-heading--white">Там есть Мост дьявола</h3>
+            <p class="advantage__text  advantage__text--white  advantage__item-counter">
+              Да, по нему можно пройти! Если конечно вы осмелитесь
+            </p>
           </div>
 
           <div class="advantage__item">
             <h3 class="advantage__item-heading">Небольшая площадь</h3>
-            <p class="advantage__text  advantage__item-counter">Все достопримечательности находятся очень близко</p>
+            <p class="advantage__text  advantage__item-counter">
+              Все достопримечательности находятся очень близко
+            </p>
           </div>
 
           <div class="advantage__item">
             <h3 class="advantage__item-heading">Красивая дорога</h3>
-            <p class="advantage__text  advantage__item-counter">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="advantage__text  advantage__item-counter">
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
+            </p>
           </div>
 
           <div class="advantage__item">
             <h3 class="advantage__item-heading">Мало туристов</h3>
-            <p class="advantage__text  advantage__item-counter">Большинство едет в гранд каньон и толпится там</p>
+            <p class="advantage__text  advantage__item-counter">
+              Большинство едет в гранд каньон и толпится там
+            </p>
           </div>
 
           <div class="advantage__item  advantage__item--service--housing  advantage__second-line">
             <h3 class="advantage__item-heading">Жильё</h3>
-            <p class="advantage__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p class="advantage__text">
+              Рекомендуем пожить в настоящем мотеле, всё как в кино!
+            </p>
           </div>
 
           <div class="advantage__item  advantage__item--service--food  advantage__second-line">
             <h3 class="advantage__item-heading">Еда</h3>
-            <p class="advantage__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p class="advantage__text">
+              Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+            </p>
           </div>
 
           <div class="advantage__item  advantage__item--service--souvenir  advantage__second-line">
             <h3 class="advantage__item-heading">Сувениры</h3>
-            <p class="advantage__text">Не только китайского, но и местного производства!</p>
+            <p class="advantage__text">
+              Не только китайского, но и местного производства!
+            </p>
           </div>
         </div>
       </section>
@@ -91,7 +107,7 @@
         <p class="search-hotel__text">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-        <button type="button" class="btn search-hotel__btn">ПОИСК ГОСТИНИЦЫ В седоне</button>
+        <button type="button" class="search-hotel__btn">ПОИСК ГОСТИНИЦЫ В седоне</button>
         <div class="search-hotel__popup">
           <form class="search-hotel__form" action="javascript:alert('форма отправленна')" method="post">
             <div class="search-hotel__element">
@@ -114,7 +130,7 @@
               <input id="child" class="search-hotel__input" name="hotel[child]" value="0">
               <button type="button" class="search-hotel__sing  search-hotel__sing--plus" aria-label="Увеличить на 1"></button>
             </div>
-            <button type="submit" class="btn  search-hotel__find-out">Найти</button>
+            <button type="submit" class="search-hotel__btn  search-hotel__btn--submit">Найти</button>
           </form>
         </div>
       </section>
@@ -123,7 +139,9 @@
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__column  footer__column--text--large">#visitSEDONA</p>
+      <p class="footer__column  footer__column--text--large">
+        #visitSEDONA
+      </p>
       <ul class="follow-us  footer__column">
         <li class="follow-us__item">
           <a href="#" class="follow-us__link  follow-us__link--twitter" aria-label="Мы в твитере">tw</a>
