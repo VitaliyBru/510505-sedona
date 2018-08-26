@@ -123,7 +123,8 @@ body {
   background-color: #fff;
 }
 
-.search-hotel__btn {
+.search-hotel__btn,
+.search-hotel__submit {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
   font-weight: 700;
@@ -138,12 +139,30 @@ body {
   border: none;
 }
 
-.search-hotel__btn--submit {
-  background-color: #81b3d2;
+.search-hotel__btn:hover,
+.search-hotel__btn:focus {
+  background-color: #604e43;
+  outline: none;
 }
 
 .search-hotel__btn:active {
   color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.search-hotel__submit {
+  background-color: #81b3d2;
+}
+
+.search-hotel__submit:hover,
+.search-hotel__submit:focus {
+  background-color: #669ec0;
+}
+
+.search-hotel__submit:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+  outline: none;
 }
 
 .search-hotel__label,
@@ -207,6 +226,11 @@ body {
   background-color: transparent;
 }
 
+.filters__btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+
 .sort__resume {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
@@ -236,8 +260,22 @@ body {
   text-transform: uppercase;
   background-color: #fff;
 
-  text-decoration: dashed;
-  text-decoration-color: #81b3d2;
+  text-decoration: none;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort__link:hover {
+  color: #81b3d2;
+}
+
+.sort__link--active {
+  color: #81b3d2;
+  border-color: transparent;
+}
+
+.sort__link:active {
+  color: #000;
+  border-color: transparent;
 }
 
 .inn {
@@ -308,6 +346,14 @@ body {
 
 .inn__btn--reserve {
   background-color: #766357;
+}
+
+.inn__btn:hover {
+  background-color: #669ec0;
+}
+
+.inn__btn--reserve:hover {
+  background-color: #604e43;
 }
 
 .inn__btn:active {
