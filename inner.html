@@ -36,7 +36,7 @@
         <fieldset class="filters__group">
           <legend class="filters__group-name">Инфраструктура:</legend>
 
-          <input type="checkbox" id="pool" class="visually-hidden" name="filters[pool]">
+          <input type="checkbox" id="pool" class="visually-hidden" name="filters[pool]" checked>
           <label for="pool" class="filters__checkbox">Бассейн</label>
 
           <input type="checkbox" id="parking" class="visually-hidden" name="filters[parking]">
@@ -48,13 +48,13 @@
         <fieldset class="filters__group  filters__group--center">
           <legend class="filters__group-name">Тип жилья:</legend>
 
-          <input type="checkbox" id="hotel" class="visually-hidden" name="filters[hotel]">
+          <input type="checkbox" id="hotel" class="visually-hidden" name="filters[hotel]" checked>
           <label for="hotel" class="filters__checkbox">Гостиница</label>
 
-          <input type="checkbox" id="motel" class="visually-hidden" name="filters[motel]">
+          <input type="checkbox" id="motel" class="visually-hidden" name="filters[motel]" checked>
           <label for="motel" class="filters__checkbox">Мотель</label>
 
-          <input type="checkbox" id="apartment" class="visually-hidden" name="filters[apartment]">
+          <input type="checkbox" id="apartment" class="visually-hidden" name="filters[apartment]" checked>
           <label for="apartment" class="filters__checkbox">Апартаменты</label>
         </fieldset>
         <fieldset class="filters__group  filters__group--right">
@@ -63,8 +63,8 @@
             <div class="slider__value-fields">
               <span class="slider__text-field">от 0</span>
               <span class="slider__text-field">До 3000</span>
-              <input id="left-value-field" type="text" class="visually-hidden" name="filters[price-min]" value="0">
-              <input id="right-value-field" type="text" class="visually-hidden" name="filters[price-max]" value="3000">
+              <input id="left-value-field" type="text" class="visually-hidden" tabindex="-1" name="filters[price-min]" value="0">
+              <input id="right-value-field" type="text" class="visually-hidden" tabindex="-1" name="filters[price-max]" value="3000">
             </div>
             <div class="slider__path-bar">
               <div class="slider__bar">
@@ -118,7 +118,7 @@
                 <span class="inn__text-cell">От 4000 Р.</span>
               </p>
               <div class="inn__buttons-row">
-                <a href="#" class="inn__btn  inn__btn--details">Подробнее</a>
+                <a href="#" class="inn__btn">Подробнее</a>
                 <a href="#" class="inn__btn  inn__btn--reserve">Забронировать</a>
               </div>
               <div class="inn__rating">Рейтинг: 8,5</div>
@@ -140,7 +140,7 @@
                 <span class="inn__text-cell">От 3000 Р.</span>
               </p>
               <div class="inn__buttons-row">
-                <a href="#" class="inn__btn  inn__btn--details">Подробнее</a>
+                <a href="#" class="inn__btn">Подробнее</a>
                 <a href="#" class="inn__btn  inn__btn--reserve">Забронировать</a>
               </div>
               <div class="inn__rating">Рейтинг: 8,9</div>
@@ -161,7 +161,7 @@
                 <span class="inn__text-cell">От 2000 Р.</span>
               </p>
               <div class="inn__buttons-row">
-                <a href="#" class="inn__btn  inn__btn--details">Подробнее</a>
+                <a href="#" class="inn__btn">Подробнее</a>
                 <a href="#" class="inn__btn  inn__btn--reserve">Забронировать</a>
               </div>
               <div class="inn__rating">Рейтинг: 9,2</div>
@@ -176,18 +176,18 @@
       </p>
       <ul class="follow-us  footer__column">
         <li class="follow-us__item">
-          <a href="#" class="follow-us__link  follow-us__link--twitter" aria-label="Мы в твитере">tw</a>
+          <a href="#" class="follow-us__link  follow-us__link--twitter" aria-label="Мы в твитере"></a>
         </li>
         <li class="follow-us__item">
-          <a href="#" class="follow-us__link  follow-us__link--fb" aria-label="Мы в фейсбуке">fb</a>
+          <a href="#" class="follow-us__link  follow-us__link--fb" aria-label="Мы в фейсбуке"></a>
         </li>
         <li class="follow-us__item">
-          <a href="#" class="follow-us__link  follow-us__link--youtube" aria-label="Наш канал на ютубе">you tube</a>
+          <a href="#" class="follow-us__link  follow-us__link--youtube" aria-label="Наш канал на ютубе"></a>
         </li>
       </ul>
       <p class="footer__column  footer__column--text--small">Website by
         <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Профессиональный HTML и CSS, уровень 1">
-          <svg class="footer__html-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 37">
+          <svg class="footer__htmlacademy-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 37">
             <use href="#logo-htmlacademy"></use>
           </svg>
         </a>
