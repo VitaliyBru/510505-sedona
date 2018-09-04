@@ -114,7 +114,7 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.main-nav__link--active {
+.main-nav__link.main-nav__link--active {
   color: #766357;
 }
 
@@ -374,19 +374,16 @@ body {
   background-color: #503e33;
 }
 
-/*Снять коменты при подключении js*/
-
 .search-hotel__anchor-popup {
-  /*display: none;*/
   position: relative;
   margin: 0 auto;
   width: 568px;
   height: 0;
 }
 
-/*.show-popup {*/
-  /*display: block;*/
-/*}*/
+.hide-popup {
+  display: none;
+}
 
 .search-hotel__popup {
   position: absolute;
@@ -396,13 +393,14 @@ body {
   overflow: hidden;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   transform-origin: top;
-  /*transform: scaleY(0);*/
-  transition-duration: 500ms;
+  transform: scaleY(1);
+  transition-duration: 660ms;
+  transition-timing-function: linear;
 }
 
-/*.drop-down-popup .search-hotel__popup {*/
-  /*transform: scaleY(1);*/
-/*}*/
+.slim-up-popup .search-hotel__popup {
+  transform: scaleY(0);
+}
 
 .search-hotel__form {
   display: flex;
@@ -410,16 +408,19 @@ body {
   position: relative;
   padding: 55px;
   transform-origin: bottom;
-  /*transform: translateY(-80%) scaleY(3);*/
-  transition-duration: 500ms;
-  bottom: 0;
+  transform: scaleY(1);
+  transition-duration: 600ms;
+  transition-delay: 60ms;
+  transition-timing-function: cubic-bezier(0.08, 0.77, 0.22, 0.92);
 
   background-color: #fff;
 }
 
-/*.drop-down-popup .search-hotel__form {*/
-  /*transform: translateY(0) scaleY(1);*/
-/*}*/
+.slim-up-popup .search-hotel__form {
+  transition-delay: 0ms;
+  transition-timing-function: cubic-bezier(0.77, 0.08, 0.92, 0.22);
+  transform: scaleY(10);
+}
 
 .search-hotel__submit {
   margin-top: 24px;
@@ -921,7 +922,7 @@ input[type="checkbox"]:disabled:checked + .filters__checkbox:before {
 }
 
 .sort__direction:active,
-.sort__direction--active {
+.sort__direction.sort__direction--active {
   color: #81b3d2;
 }
 
@@ -942,13 +943,13 @@ input[type="checkbox"]:disabled:checked + .filters__checkbox:before {
   color: #81b3d2;
 }
 
-.sort__link--active {
-  color: #81b3d2;
+.sort__link:active {
+  color: #000;
   border-color: transparent;
 }
 
-.sort__link:active {
-  color: #000;
+.sort__link.sort__link--active {
+  color: #81b3d2;
   border-color: transparent;
 }
 

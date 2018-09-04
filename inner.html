@@ -27,34 +27,34 @@
           <a href="#" class="main-nav__link">Карта штата</a>
         </li>
         <li class="main-nav__item">
-          <a href="inner.html" class="main-nav__link">Гостиницы</a>
+          <a class="main-nav__link  main-nav__link--active">Гостиницы</a>
         </li>
       </ul>
     </header>
     <main class="main">
-      <form class="filters" action="javascript: alert('форма отправленна')" method="get">
+      <form class="filters" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="filters__group">
           <legend class="filters__group-name">Инфраструктура:</legend>
 
-          <input type="checkbox" id="pool" class="visually-hidden" name="filters[pool]" checked>
+          <input type="checkbox" id="pool" class="visually-hidden" name="filters[pool]" value="true" checked>
           <label for="pool" class="filters__checkbox">Бассейн</label>
 
-          <input type="checkbox" id="parking" class="visually-hidden" name="filters[parking]">
+          <input type="checkbox" id="parking" class="visually-hidden" name="filters[parking]" value="true">
           <label for="parking" class="filters__checkbox">Парковка</label>
 
-          <input type="checkbox" id="wi-fi" class="visually-hidden" name="filters[wi-fi]">
+          <input type="checkbox" id="wi-fi" class="visually-hidden" name="filters[wi-fi]" value="true">
           <label for="wi-fi" class="filters__checkbox">Wi-Fi</label>
         </fieldset>
         <fieldset class="filters__group  filters__group--center">
           <legend class="filters__group-name">Тип жилья:</legend>
 
-          <input type="checkbox" id="hotel" class="visually-hidden" name="filters[hotel]" checked>
+          <input type="checkbox" id="hotel" class="visually-hidden" name="filters[hotel]" value="true" checked>
           <label for="hotel" class="filters__checkbox">Гостиница</label>
 
-          <input type="checkbox" id="motel" class="visually-hidden" name="filters[motel]" checked>
+          <input type="checkbox" id="motel" class="visually-hidden" name="filters[motel]" value="true" checked>
           <label for="motel" class="filters__checkbox">Мотель</label>
 
-          <input type="checkbox" id="apartment" class="visually-hidden" name="filters[apartment]" checked>
+          <input type="checkbox" id="apartment" class="visually-hidden" name="filters[apartment]" value="true" checked>
           <label for="apartment" class="filters__checkbox">Апартаменты</label>
         </fieldset>
         <fieldset class="filters__group  filters__group--right">
@@ -83,7 +83,7 @@
         <div class="sort__title">Сортировка:</div>
         <ul class="sort__list">
           <li class="sort__item-type">
-            <a href="#" class="sort__link  sort__link--active">По цене</a>
+            <a class="sort__link  sort__link--active">По цене</a>
           </li>
           <li class="sort__item-type">
             <a href="#" class="sort__link">По типу</a>
@@ -97,7 +97,7 @@
             <a href="#" class="sort__direction" aria-label="Сортировать по возрастанию">&#9650;</a>
           </li>
           <li class="sort__item-by">
-            <a href="#" class="sort__direction  sort__direction--active" aria-label="Сортировать по убыванию">&#9660;</a>
+            <a class="sort__direction  sort__direction--active" aria-label="Сортировать по убыванию">&#9660;</a>
           </li>
         </ul>
       </div>
