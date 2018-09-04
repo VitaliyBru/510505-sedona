@@ -7,36 +7,48 @@
   }
   var popupAnchor = document.querySelector('.search-hotel__anchor-popup');
   var popup = popupAnchor.children[0];
-  var debounceFlag = false;
-  var toggleAction = null;
+  var isTransition = false;
+  var isPopupOpen = false;
+  var isFirstEvent = true;
 
   var openAnimationEnd = function () {
-    debounceFlag = false;
-    popup.removeEventListener('transitionend', toggleAction);
+    if (isFirstEvent) {
+      isFirstEvent = false;
+      return;
+    }
+    isTransition = false;
+    popup.removeEventListener('transitionend', openAnimationEnd);
+    isPopupOpen = true;
+    isFirstEvent = true;
   };
 
   var closeAnimationEnd = function () {
-    debounceFlag = false;
-    popup.removeEventListener('transitionend', toggleAction);
+    if (isFirstEvent) {
+      isFirstEvent = false;
+      return;
+    }
+    isTransition = false;
+    popup.removeEventListener('transitionend', closeAnimationEnd);
     popupAnchor.classList.add('hide-popup');
+    isPopupOpen = false;
+    isFirstEvent = true;
   };
 
   var onSearchHotelBtnClick = function (evt) {
-    if (debounceFlag) {
+    if (isTransition) {
       evt.stopPropagation();
       return;
     }
-    debounceFlag = true;
-    if (toggleAction === openAnimationEnd) {
-      toggleAction = closeAnimationEnd;
+    isTransition = true;
+    if (isPopupOpen) {
+      popup.addEventListener('transitionend', closeAnimationEnd);
     } else {
       popupAnchor.classList.remove('hide-popup');
-      toggleAction = openAnimationEnd;
+      popup.addEventListener('transitionend', openAnimationEnd);
     }
-    popup.addEventListener('transitionend', toggleAction);
     setTimeout(function () {
       popupAnchor.classList.toggle('slim-up-popup');
-    }, 1);
+    }, 50);
   };
 
   popupAnchor.classList.add('hide-popup');
