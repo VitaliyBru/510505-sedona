@@ -939,6 +939,7 @@ body
 .filters__checkbox,
 .filters__label-input,
 .slider__text-field,
+.slider__input,
 .filters__btn
 {
   font-family: 'PT Sans', Arial, sans-serif;
@@ -972,6 +973,11 @@ body
   height: 23px;
 
   content: url('../img/checkbox-off.svg');
+}
+
+input[type='checkbox']:focus + .filters__checkbox:before
+{
+  outline: 2px solid #87cefa;
 }
 
 input[type='checkbox']:checked + .filters__checkbox:before
@@ -1025,6 +1031,7 @@ input[type='checkbox']:disabled:checked + .filters__checkbox:before
   width: 100%;
   height: 36px;
   margin: 0 0 20px;
+  padding-bottom: 2px;
 
   border: 2px solid #fff;
   border-radius: 3px;
@@ -1037,11 +1044,23 @@ input[type='checkbox']:disabled:checked + .filters__checkbox:before
   width: 50%;
   height: 22px;
 
-  text-align: center;
+  text-align: right;
 
   box-shadow: 2px 0 0 #fff;
 
   flex-grow: 1;
+}
+
+.slider__input
+{
+  width: 73px;
+
+  border-color: transparent;
+}
+
+.slider__input--right
+{
+  margin-right: 8px;
 }
 
 .slider__path-bar

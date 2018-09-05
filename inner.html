@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>HTML Academy: Седона-отели</title>
 </head>
 <body>
@@ -61,10 +61,14 @@
           <legend class="filters__group-name  filters__group-name--margin">Стоимость в сутки (Р):</legend>
           <div class="slider">
             <div class="slider__value-fields">
-              <span class="slider__text-field">от 0</span>
-              <span class="slider__text-field">До 3000</span>
-              <input id="left-value-field" type="text" class="visually-hidden" tabindex="-1" name="filters[price-min]" value="0">
-              <input id="right-value-field" type="text" class="visually-hidden" tabindex="-1" name="filters[price-max]" value="3000">
+              <label class="slider__text-field">
+                от
+                <input id="left-value-field" type="text" class="slider__input" name="filters[price-min]" value="0">
+              </label>
+              <label class="slider__text-field">
+                До
+                <input id="right-value-field" type="text" class="slider__input  slider__input--right" name="filters[price-max]" value="3000">
+              </label>
             </div>
             <div class="slider__path-bar">
               <div class="slider__bar">
