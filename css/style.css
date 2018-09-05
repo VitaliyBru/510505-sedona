@@ -1046,9 +1046,12 @@ input[type='checkbox']:disabled:checked + .filters__checkbox:before
 
   text-align: right;
 
-  box-shadow: 2px 0 0 #fff;
-
   flex-grow: 1;
+}
+
+.slider__text-field--divide-line
+{
+  box-shadow: 2px 0 0 #fff;
 }
 
 .slider__input
@@ -1143,11 +1146,11 @@ input[type='checkbox']:disabled:checked + .filters__checkbox:before
 {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 18px;
 
   width: 100px;
-  margin-top: 4px;
+  margin-top: 5px;
 
   text-transform: uppercase;
 
@@ -1215,7 +1218,7 @@ input[type='checkbox']:disabled:checked + .filters__checkbox:before
 {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 18px;
 
   text-decoration: none;
